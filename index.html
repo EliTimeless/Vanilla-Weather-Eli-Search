@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather app by Eli</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/02b9b35ab8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container weather">
+      <div class="main">
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="enter city"
+            autocomplete="off"
+            autofocus="on"
+            id="search-text-input"
+          />
+          <input class="btn submit" type="submit" value="Search" />
+          <div class="btn btn-text-right" id="current-location">
+            ➤ Current location
+          </div>
+        </form>
+
+        <br />
+        <div class="text-center">
+          <div class="row">
+            <div class="col-6 first">
+              <div id="curr-date">today's date</div>
+              <img
+                src="https://openweathermap.org/img/wn/01n@2x.png"
+                alt="clear"
+                id="icon"
+              />
+              <div id="clouds">cloudy</div>
+            </div>
+            <div class="col-6 second">
+              <h1 id="city">Prague</h1>
+              <h2>
+                <span id="temperature">20</span>
+                <span class="degrees"
+                  ><a href="#" id="celsius">ºC</a>|<a href="#" id="farhenheit"
+                    >ºF</a
+                  ></span
+                >
+              </h2>
+              <h2>
+                <i class="fa-solid fa-wind"></i>
+                <span id="wind">5 m/s</span>
+              </h2>
+
+              <h2 id="high-low">30º high | 19º low</h2>
+              <h2 id="humidity">humidity 55%</h2>
+            </div>
+          </div>
+        </div>
+        <span class="other-days">Next 5 days</span>
+        <div class="card-group rounded">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Mon</h5>
+              <div class="card-text" id="temp-other">29º/18º</div>
+              <div class="card-text">
+                <i class="fa-solid fa-wind"></i>11km/h
+              </div>
+              <p class="card-text"><i class="fa-regular fa-sun"></i></p>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Tue</h5>
+              <p class="card-text">25º/13º</p>
+              <p class="card-text"><i class="fa-solid fa-wind"></i>12m/h</p>
+              <p class="card-text"><i class="fa-solid fa-cloud"></i></p>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Wed</h5>
+              <p class="card-text">24º/11º</p>
+              <p class="card-text"><i class="fa-solid fa-wind"></i>16km/h</p>
+              <p class="card-text"><i class="fa-solid fa-cloud-bolt"></i></p>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Thu</h5>
+              <p class="card-text">22º/13º</p>
+              <p class="card-text"><i class="fa-solid fa-wind"></i>7km/h</p>
+              <p class="card-text"><i class="fa-solid fa-cloud-sun"></i></p>
+            </div>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Fri</h5>
+              <p class="card-text">20º/13º</p>
+              <p class="card-text"><i class="fa-solid fa-wind"></i>10km/h</p>
+              <p class="card-text"><i class="fa-solid fa-cloud-sun"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="open-source">
+        <a
+          href="https://github.com/EliTimeless/blue-rosemary-weatherApp.git"
+          target="_blank"
+          >Open-source code
+        </a>
+        by Eliska Necas
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
