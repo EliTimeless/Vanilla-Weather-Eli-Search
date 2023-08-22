@@ -1,0 +1,125 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 20px auto;
+}
+i {
+  color: #eb6e4c;
+}
+.weather {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.main {
+  border: solid 2px #afd3e2;
+  background-color: #397998;
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 10px 10px;
+}
+h1 {
+  color: #ffffff;
+  font-size: 35px;
+}
+h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+a {
+  color: #eb6e4c;
+}
+a:hover {
+  color: #19a7ce;
+}
+form {
+  font-size: 15px;
+  margin: 30px 20px 10px 20px;
+}
+input {
+  padding: 5px 15px;
+  border-radius: 30px;
+  text-align: center;
+  font-style: italic;
+  box-shadow: 5px 5px 5px #b4c8d1;
+  border: solid 2px rgb(255, 255, 255);
+}
+
+.submit {
+  color: #f9f9f9;
+  background-color: #6698af;
+  box-shadow: 5px 5px 5px #b4c8d1;
+}
+#current-location {
+  color: rgb(255, 255, 255);
+}
+#current-location:hover {
+  color: #9ee0ff;
+}
+
+.btn {
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+  border: solid 2px rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px #b4c8d1;
+  padding: 5px 20px;
+  margin: 0 10px;
+}
+
+#curr-date {
+  font-size: 20px;
+  color: #90bbcf;
+}
+
+#temperature {
+  font-size: 35px;
+  color: #eb6e4c;
+}
+
+.degrees {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+}
+
+.first,
+.second {
+  color: #90bbcf;
+}
+.first {
+  font-size: 20px;
+}
+.second {
+  font-size: 30px;
+}
+
+.other-days {
+  color: #9ee0ff;
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 10px;
+}
+.card-group,
+.card-body {
+  border: 1px solid #ffffff;
+  background-color: #6698af;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-text {
+  font-size: 20px;
+}
+
+.open-source {
+  display: block;
+  margin: 0 10px;
+}
